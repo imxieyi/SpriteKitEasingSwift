@@ -25,6 +25,8 @@ public enum CurveType {
     case curveTypeCircular
     case curveTypeExpo
     case curveTypeElastic
+    case curveTypeElasticHalf
+    case curveTypeElasticQuarter
     case curveTypeBack
     case curveTypeBounce
 }

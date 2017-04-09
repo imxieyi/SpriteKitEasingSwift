@@ -17,7 +17,7 @@
 
 import UIKit
 
-let M_PI_2_f = Float(Double.pi / 2)
+let M_PI_2_f = Float(Double.pi/2)
 let M_PI_f = Float(Double.pi)
 
 public typealias AHEasingFunction = (Float)->Float
@@ -232,6 +232,18 @@ public func ElasticEaseIn(_ p:Float)->Float
 public func ElasticEaseOut(_ p:Float)->Float
 {
     return sinFloat(-13 * M_PI_2_f * (p + 1)) * pow(2, -10 * p) + 1;
+}
+
+// Modeled after the damped sine wave y = sin(0.5*-13pi/2*(x + 1))*pow(2, -10x) + 1
+public func ElasticHalfEaseOut(_ p:Float)->Float
+{
+    return sinFloat(0.5 * -13 * M_PI_2_f * (p + 1)) * pow(2, -10 * p) + 1;
+}
+
+// Modeled after the damped sine wave y = sin(0.25*-13pi/2*(x + 1))*pow(2, -10x) + 1
+public func ElasticQuarterEaseOut(_ p:Float)->Float
+{
+    return sinFloat(0.25 * -13 * M_PI_2_f * (p + 1)) * pow(2, -10 * p) + 1;
 }
 
 // Modeled after the piecewise exponentially-damped sine wave:
