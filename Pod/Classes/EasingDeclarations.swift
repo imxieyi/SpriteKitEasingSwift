@@ -15,7 +15,7 @@
 import Foundation
 import SpriteKit
 
-class FlipNode:SKSpriteNode {
+open class FlipNode:SKSpriteNode {
     var hflip=false
     var vflip=false
 }
