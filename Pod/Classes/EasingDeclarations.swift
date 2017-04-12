@@ -13,6 +13,12 @@
 //  See LICENSE file for licensing information
 
 import Foundation
+import SpriteKit
+
+class FlipNode:SKSpriteNode {
+    var hflip=false
+    var vflip=false
+}
 
 ///Curve type
 public enum CurveType {
