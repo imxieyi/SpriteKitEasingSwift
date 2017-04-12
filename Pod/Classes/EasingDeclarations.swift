@@ -16,8 +16,8 @@ import Foundation
 import SpriteKit
 
 open class FlipNode:SKSpriteNode {
-    var hflip=false
-    var vflip=false
+    open var hflip=false
+    open var vflip=false
 }
 
 ///Curve type
